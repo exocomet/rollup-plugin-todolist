@@ -1,0 +1,26 @@
+{
+  "name": "rollup-plugin-todolist",
+  "version": "0.1.0",
+  "description": "List TODOs with rollup",
+  "scripts": {
+    "ci:test": "ava --verbose",
+    "test": "ava"
+  },
+  "author": "Alexander Kutterer",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.10.1",
+    "rollup": "^2.23.0"
+  },
+  "dependencies": {},
+  "main": "dist/rollup-plugin-todolist.cjs.js",
+  "module": "dist/rollup-plugin-todolist.es.js",
+  "ava": {
+    "files": [
+      "!**/fixtures/**",
+      "!**/helpers/**",
+      "!**/recipes/**",
+      "!**/types.ts"
+    ]
+  }
+}
